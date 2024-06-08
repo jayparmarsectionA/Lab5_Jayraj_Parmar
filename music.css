@@ -1,0 +1,212 @@
+h1, h2, h3, p {
+    font-size: 1.5vw;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    h1, h2, h3, p {
+        font-size: 4vw;
+    }
+}
+
+body {
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #823c02;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size:xx-large;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+#image1{
+    height: 750px;
+    width: 900px;
+    padding: 20px;
+    margin: 10px;
+}
+
+#image2{
+    height: 750px;
+    padding: 20px;
+    margin: 10px;
+}
+
+main{
+    background-color: #af6930;
+}
+
+section {   
+    padding: 20px;
+    margin-top: 20px;
+
+    background-color: #fffefb;
+
+}
+
+#genres{
+    background-color:rgb(255, 255, 106)
+}
+#artists{
+    background-color: rgb(244, 194, 16);
+}
+#instruments{
+    background-color: rgb(255, 174, 0);
+}
+
+#famous{
+    position: relative;
+    height:200px;
+    width: 30%;
+    background-color:antiquewhite;
+    border: 2px solid black;
+    border-radius: 5%;
+    padding-top: 20px;
+    margin: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.play-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+.img1{
+    background-image: url("https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_avif,h_711,q_65,w_960/v1/crm/lasvegas/MARSHMELLO_CCA3E905-ABC1-9FF2-04918E92F1A5D3D3_cca42a26-b448-a395-37a026f369a919a9.jpg");
+    background-size: cover;
+}
+
+.img2{
+    background-image: url("https://variety.com/wp-content/uploads/2020/04/the-weeknd-variety-cover-shoot-2-16x9-1.jpg");
+    background-size: contain; 
+}
+
+.img3{
+    background-image: url("https://imageio.forbes.com/specials-images/imageserve/6626b83481a43da5f422da86/Drake-s-Till-Death-Do-Us-Part-Rap-Battle-Event/0x0.jpg?crop=3224,1814,x0,y124,safe&height=400&width=711&fit=bounds");
+    background-size: contain; 
+}
+
+.img4{
+    background-image: url("https://images.universal-music.de/img/assets/563/563677/4/720/fotojet-46jpg.jpg");
+    background-size: cover; 
+}
+
+.img5{
+    background-image: url("https://media.gq.com/photos/5a5f79d835be9e1aebeceecf/16:9/w_2560%2Cc_limit/Dua_Lipa_01.jpg");
+    background-size: cover; 
+}
+
+.img6{
+    background-image: url("https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/2900/files/2023/11/david-guetta-white-image.jpg");
+    background-size: cover; 
+}
+
+.flex-container {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-bottom: 20px; /* Add some spacing between sections */
+}
+
+#inst{
+    position: relative;
+    height:150px;
+    width: 20%;
+    background-color:antiquewhite;
+    border: 2px solid black;
+
+    border-radius: 5%;
+    padding-top: 20px;
+    margin: 20px;
+    color: rgb(254, 221, 5);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.ins1{
+    background-image: url("https://www.pmtonline.co.uk/media/wysiwyg/Antiquity-Gs1-Electric-Guitar-Cherry-Red-1_1.jpg");
+    background-size: cover; 
+}
+
+.ins2{
+    background-image: url("https://snadenspianos.com.au/wp-content/uploads/2023/06/kawai-piano-history-1024x683.jpg");
+    background-size: cover; 
+}
+
+.ins3{
+    background-image: url("https://geraldmusique.ca/wp-content/uploads/2023/01/IMG_1383-scaled.jpg");
+    background-size: cover; 
+}
+
+.ins4{
+    background-image: url("https://www.kennysmusic.co.uk/news/wp-content/uploads/2022/08/vector-stick-and-mod-knobs-700x417.png");
+    background-size: cover; 
+}
+
+#artists div button:hover{
+
+    background-color: rgb(169, 168, 168);
+    transform: scale(1.15);
+}
+
+#instruments div:hover{
+    transform: scale(1.08);
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container > div {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flex-container > div {
+        width: calc(100% - 20px);
+    }
+}
+
